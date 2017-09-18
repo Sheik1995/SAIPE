@@ -28,7 +28,7 @@ import javax.swing.JSeparator;
 public class MenuPrincipal extends JFrame{
     
    public MenuPrincipal() {
-       this.setTitle("SAIPE");
+       this.setTitle("S.A.I.P.E");
        this.setIconImage(new ImageIcon(getClass().getResource("/saipe/imagenes/logo.jpg")).getImage());
        configuracion();
        agregarComponentes(this.getContentPane());
