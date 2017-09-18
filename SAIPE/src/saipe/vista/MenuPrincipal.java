@@ -8,9 +8,11 @@ package saipe.vista;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.GridBagConstraints;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -27,6 +29,7 @@ public class MenuPrincipal extends JFrame{
     
    public MenuPrincipal() {
        this.setTitle("SAIPE");
+       this.setIconImage(new ImageIcon(getClass().getResource("/saipe/imagenes/logo.jpg")).getImage());
        configuracion();
        agregarComponentes(this.getContentPane());
        iniciar();
@@ -43,6 +46,8 @@ public class MenuPrincipal extends JFrame{
        this.setResizable(false);
        this.setLocationRelativeTo(null);
        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+       
+       
        addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -113,5 +118,7 @@ public class MenuPrincipal extends JFrame{
     private JMenu menuProductos;
     private JMenu menuProductosNuevos;
     private final String[] opcionesProductos = {"Ingresar","Consultar","Actualizar","Inactivar"};
+    
+    
     
 }
