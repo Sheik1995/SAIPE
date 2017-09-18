@@ -6,6 +6,7 @@
 package saipe;
 
 import saipe.vista.MenuPrincipal;
+import saipe.vista.Principal;
 
 /**
  *
@@ -17,7 +18,10 @@ public class main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MenuPrincipal menuPrincipal = new MenuPrincipal();
+        //MenuPrincipal menuPrincipal = new MenuPrincipal();
+        Principal principal = new Principal();
+        principal.setVisible(true);
     }
     
 }
+
