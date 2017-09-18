@@ -29,7 +29,7 @@ public class MenuPrincipal extends JFrame{
     
    public MenuPrincipal() {
        this.setTitle("SAIPE");
-       this.setIconImage(new ImageIcon(getClass().getResource("../imagenes/logo.jpg")).getImage());
+       this.setIconImage(new ImageIcon(getClass().getResource("/saipe/imagenes/logo.jpg")).getImage());
        configuracion();
        agregarComponentes(this.getContentPane());
        iniciar();
